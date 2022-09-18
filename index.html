@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="funcion.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--inicio menu-->
+    <nav class="menu">
+        <div class="desplegable" onclick="mostrar()">
+            <span></span><span></span><span></span>
+        </div>
+        <a href="index.html"><label class="logo">Tecla F5</label></a>
+        <ul id="barra">
+            <li><span class="close" onclick="ocultar()">X</span></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+    <!--inicio banner-->
+    <header>
+        <div class="banner">
+            <div class="texto-banner">
+                <h1>TECLA F5</h1>
+                <h3>Soluciones Tecnologica</h3>
+            </div>
+        </div>
+    </header>
+
+    <!--contenido-->
+    <main>
+        <section class="nosotros">
+            <h1 class="titulo">Quienes Somos?</h1>
+            <div class="linea"></div>
+            <p class= "contenido">Somos una consultora tecnológica. Dicho de otra manera, convertimos conocimiento y tecnología en herramientas que mejoren el desempeño de las organizaciones, convirtiéndolas en soluciones 100% eficaces que ayuden a las empresas a ser más competitivas.
+            </p>
+            <a href="#" class="boton">Ver mas</a>
+        </section>
+
+        <section class="servicios" id="servicios">
+            <h1 class="titulo">Nuestros Servicios</h1>
+            <div class="linea"></div>
+            <div class="contenido">
+                <div class="imagen">
+                    <div><img src="diseñoweb.png" alt=""></div>
+                    <p>Diseño Web</p>
+                    <a href="diseñoweb.html"><div class="boton2" > Ver mas </div></a>
+                </div>
+                <div class="imagen">
+                    <div><img src="programacionweb.png" alt=""></div>
+                    <p>Programacion Web</p>
+                    <a href="programacionweb.html"><div class="boton2"> Ver mas </div></a>
+                </div>
+                <div class="imagen">
+                    <div><img src="ciberseguridad.png" alt=""></div>
+                    <p>Ciberseguridad</p>
+                    <a href="ciberseguridad.html"><div class="boton2"> Ver mas </div></a>
+                </div>
+                <div class="imagen">
+                    <div><img src="gestionderedes.png" alt=""></div>
+                    <p>Gestion de Redes Sociales</p>
+                    <a href="gestionredes.html"><div class="boton2"> Ver mas </div></a>
+                </div>
+                <div class="imagen">
+                    <div><img src="desarrollo.png" alt=""></div>
+                    <p>Desarrollo de Software</p>
+                    <a href="desarrollo.html"><div class="boton2"> Ver mas </div></a>
+                </div>
+                <div class="imagen">
+                    <div><img src="grafico.png" alt=""></div>
+                    <p>Diseño Grafico</p>
+                    <a href="redes.html"><div class="boton2"> Ver mas </div></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="galeria">
+            <h1 class="titulo">Galeria</h1>
+            <div class="linea"></div>
+            <div class="slider">
+                <ul>
+                    <li><img src="galeria1.png" alt=""></li>
+                    <li><img src="galeria2.png" alt=""></li>
+                    <li><img src="galeria3.png" alt=""></li>
+                    <li><img src="galeria4.png" alt=""></li>
+                    <li><img src="galeria5.png" alt=""></li>
+                    <li><img src="galeria6.png" alt=""></li>
+                </ul>
+            </div>
+
+
+        </section>
+        <br>
+        <br>
+        <section class="formulario">
+            <br>
+            <h1 class="titulo">Solicitud de Informacion</h1>
+            <div class="linea"></div>
+
+
+            <form>
+                <p>Nombre Completo</p>
+                <input type="text" class="field"> <br>
+                <p>Correo electronico</p>
+                <input type="text" class="field"> <br>
+                <p>Celular</p>
+                <input type="number" class="field"> <br>
+                <br>
+                <p>Servicio a Solicitar</p>
+                <input type="radio" name="servicio" value="DesarrolloWeb">Desarrollo Web<br>
+
+                <input type="radio" name="servicio" value="Ciberseguridad"> Ciberseguridad<br>
+
+                <input type="radio" name="servicio" value="ProgramacionWeb"> Programacion Web<br>
+
+                <input type="radio" name="empleoactual" value="GestiondeRedes"> Gestion de Redes<br>
+
+                <input type="radio" name="empleoactual" value="DesarrollodeSoft "> Desarrollo de Software<br>
+
+                <input type="radio" name="empleoactual" value="DiseñoGrafico"> DiseñoGrafico<br>
+                
+                <p class="center-content"><input type="button" class="btn btn-green" value="Enviar Datos"></p>
+            </form>
+            
+
+        </section>
+        
+        
+
+
+        <footer class="redes" id="contacto">
+            <div class="lineaform"></div>
+            <h3>Siguenos en:</h3>
+            <i class='bx bxl-facebook bx-sm bx-burst-hover'  style="color: #ffff;"></i>
+            <i class='bx bxl-instagram-alt bx-sm bx-burst-hover' style="color: #ffff;"></i>
+            <br>
+            &copy;Kevin Fernandez
+            <h3>Contacto:</h3>
+            <p>809-111-1111</p>
+            <p>@gmail.com</p>
+        </footer>
+        
+
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu .logo{
+    color: white;
+    font-size: 25px;
+    line-height: 70px;
+    margin-left: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu ul{
+    float: right;
+    margin-right: 10px;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin: 30px 15px;
+}
+
+.menu ul li a{
+    font-size: 16px;
+    padding: 8px 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover{
+    color: yellow;
+}
+
+.menu{
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+/*banner*/ 
+
+.banner{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background: url('banner.png') no-repeat center center/cover;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+.banner .texto-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 37px;
+    min-width: 40%;
+    min-height: 20%;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+
+}
+.banner .texto-banner h3,
+.banner .texto-banner h1{
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.banner .texto-banner h1{
+    font-size: 20px;
+}
+
+/*Quienes somos*/
+.nosotros{
+    padding: 10px 100px;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.titulo{
+    font-family: 'Times New Roman', Times, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-size: 33px;
+    text-align: center;
+}
+
+.linea{
+    width: 200px;
+    height: 6px;
+    background-color: #00857A;
+    margin: 10px auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.boton{
+    background-color: #00857A;
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 40px auto 0;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 15px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.boton:hover{
+    background-color: blue;
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+
+
+.paginas img{
+    width: 97%;
+    height: 240px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+.paginas p{
+    text-align: justify;
+}
+
+/*servicios*/
+
+.servicios{
+    margin: 50px 70px;
+}
+.servicios .contenido{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.imagen img{
+    width: 97%;
+    height: 240px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+.imagen p{
+    text-align: center;
+    font-weight: bolder;
+    margin: 20px 0;
+}
+
+.imagen .boton2{
+    background-color: #00857A;
+    width: 100px;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.imagen a{
+    text-decoration: none;
+}
+
+.imagen .boton2:hover{
+    background-color: blue;
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+.redes{
+    background-color: black;
+    color: white;
+    height: 215px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*inicio galeria*/ 
+
+.slider{
+	width: 70%;
+	margin: auto;
+	height: 550px;
+	overflow: hidden; 
+}
+
+.slider ul{
+	padding: 0;
+	display: flex;
+	width: 600%;
+
+	animation: slider 20s infinite;
+}
+
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+
+.slider li img{
+	width: 100%;
+	display: block;
+}
+
+@keyframes slider{
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+
+}
+
+/*fin galeria*/ 
+
+/*inicio form*/ 
+
+form{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    font-size:large;
+
+}
+
+textarea, input{
+    border: 0;
+    outline: none;
+}
+
+.center-content{
+    text-align: center;
+    background: rgb(0, 0, 0);
+    font-size:x-large;
+    justify-content: center;
+    display: block;
+}
+
+.btn-green{
+    background-color: rgb(238, 238, 238);
+   
+}
+
+.lineaform{
+    width: 100%;
+    height: 6px;
+    background-color:#00857A;
+    border-radius: 5px;
+    margin: 10px auto;
+    margin-bottom: 30px;
+}
+
+
+
+/*fin form*/ 
+
+
+
+
+/*banner*/ 
+@media (max-width: 700px){
+     
+    .desplegable{
+        width: 30px;
+        position: absolute;
+        top: 40px;
+        transform: translateY(-50%);
+    }
+
+    .desplegable span{
+        margin-bottom: 3px;
+        background-color: white;
+        display: block;
+        height: 3px;
+    }
+
+    .menu .logo{
+        margin-left: 50px;
+    }
+
+    .menu{
+        position: relative;
+    }
+
+    nav ul{
+        float: none;
+        width: 300px;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background-color: black;
+        margin: 0px;
+        padding-top: 60px;
+        transition: 1s;
+        left: -100%;
+        z-index: 2;
+
+    }
+
+    .open{
+        left: 0;
+    }
+
+    .menu ul li {
+        display: block;
+        float: none;
+    }
+
+    .menu ul li a{
+        font-size: 18px;
+        padding: 10px 40px;
+
+    }
+
+    .close{
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 10px;
+        top: 15px;
+        color: skyblue;
+        font-size: 30px;
+        cursor: pointer;
+         
+    }
+}
+
+@media (max-width: 850px){
+    .servicios .contenido{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 550px){
+    .servicios .contenido{
+        grid-template-columns: auto;
+    }
+}
+
+
+
